@@ -1,0 +1,396 @@
+
+/* -----------------------------
+--------------Body--------------
+----------------------------- */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0
+}
+
+/* -----------------------------
+--------------Texto-------------
+----------------------------- */
+
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  font-size: 11vw;
+  line-height: 0;
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+  color: #e7ee5a;
+}
+
+h2{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 5vw;
+  line-height: 0;
+  color: #000000;
+}
+
+h3 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  color: #000000;
+}
+
+h4 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #000000;
+}
+
+h5{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 4vw;
+  line-height: 0;
+  color: #000000;
+}
+
+h6 {
+
+}
+
+p {
+  font-size: .9vw;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  line-height: 2.5;
+  color: #000000;
+}
+
+
+/* -----------------------------
+------------Sección 1-----------
+----------------------------- */
+
+#sec1{
+  background-color:#2C3EC8;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#sidebar{
+  box-shadow:0px 0px 0px 0px #000000 inset;
+  position: absolute;
+  top:0;
+  left: 60vw;
+  /* background-color:#d2b9ed; */
+  height: 100vh;
+  width: 40vw;
+  z-index: 10;
+} @media all and (min-width:481px) and (max-width : 768px) {
+  #sidebar{
+    height: auto;
+  }
+} @media only screen and (max-width : 480px) {
+  #sidebar{
+    height: auto;
+  }
+}
+
+#contacto{
+  margin-top: 1vw;
+  margin-right: 1vw;
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  height: 2vw;
+  width: 12vw;
+  display: inline-block;
+  text-align: center;
+}
+
+#contacto p {
+  margin-left: 4vw;
+  text-align: center;
+  line-height: 0;
+}
+
+#cv{
+  margin-top: 1vw;
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  height: 2vw;
+  width: 12vw;
+  display: inline-block;
+  text-align: center;
+}
+
+#cv p {
+  margin-left: 5vw;
+  line-height: 0;
+}
+
+#info{
+  top: 10%;
+  position: absolute;
+  box-shadow:0px 0px 0px 0px #000000 inset;
+  height: 55%;
+  width: 100%;
+  display: inline-block;
+  left: 0;
+  padding-left: 5%;
+  padding-top: 5vh;
+  padding-right: 5vw;
+}
+
+#info p{
+  padding-right: 5vw;
+}
+
+#info h1{
+  margin-left: -50vw;
+}
+
+#scroll{
+  position: absolute;
+  box-shadow:0px 0px 0px 0px #000000 inset;
+  height: 20%;
+  width: 100%;
+  display: inline-block;
+  top: 80%;
+  left: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#scroll h5 {
+  color: #e7ee5a;
+}
+
+/* ---      Three.js     ----- */
+
+#backdiv{
+  background-image: linear-gradient(-200deg, #ffffff, #d2b9ed, #d2b9ed);
+  height: 100vh;
+  z-index: -20 !important;
+}
+
+#overlay{
+  box-shadow:0px 0px 0px 0px #000000 inset;
+  position: absolute;
+  z-index: -7;
+  left: 0;
+  top: 0;
+  width: 60vw;
+	height: 100vh;
+  opacity: .7;
+  /* background-image: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,.4)); */
+}
+
+#scene3d {
+	position: absolute;
+  top: 0;
+	width: 60vw;
+	height: 100vh;
+  z-index: 0 !important;
+} @media all and (min-width:481px) and (max-width : 768px) {
+  #scene3d {
+    all: initial;
+    display: none;
+  }
+} @media only screen and (max-width : 480px) {
+  #scene3d {
+    all: initial;
+    display: none;
+  }
+}
+
+/* -----------------------------
+------------Sección 2-----------
+----------------------------- */
+
+#menu{
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+  background-color: pink;
+  box-shadow:0px 0px 0px 0px #000000 inset;
+  z-index: 0;
+  display: block;
+  position: absolute;
+  height: 100vh;
+  min-height: 60vw;
+  width: 100vw;
+  z-index: -1 !important;
+}
+
+#menu h2 {
+  line-height: 0;
+  margin-bottom: 3vw;
+  padding-top: 1vw;
+}
+
+#menu p {
+  padding-top: 0;
+  line-height: 2;
+  padding-right: 5vw;
+}
+
+/*------------Boton1----------- */
+
+#boton1{
+  z-index: 10;
+  display: block;
+  padding-left: 5vw;
+  padding-top: 1vw;
+}
+
+#boton1 h2 {
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+}
+
+#boton1:hover > h2 {
+  font-size: 7vw;
+  color: red;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+#boton1 p {
+  transition-duration: .5s;
+  margin-top: 1vw;
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  background-color: red;
+  overflow: hidden;
+  height: 0vw;
+  width: 40vw;
+}
+
+#boton1:hover > p {
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  height: 6.5vw;
+  padding: 1vw;
+}
+
+/*------------Boton2----------- */
+
+#boton2{
+  display: block;
+  z-index: 0;
+  padding-left: 5vw;
+  padding-top: 1vw;
+}
+
+#boton2 h2 {
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+}
+
+#boton2:hover > h2 {
+  font-size: 7vw;
+  color: red;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+#boton2 p {
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+  display: block;
+  margin-top: 1vw;
+  background-color: red;
+  overflow: hidden;
+  height: 0vw;
+  width: 40vw;
+}
+
+#boton2:hover > p {
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  height: 6.5vw;
+  padding: 1vw;
+}
+
+/*------------Boton3----------- */
+
+#boton3{
+  display: block;
+  z-index: 0;
+  display: block;
+  padding-left: 5vw;
+  padding-top: 1vw;
+}
+
+#boton3 h2 {
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+}
+
+#boton3:hover > h2 {
+  font-size: 7vw;
+  color: blue;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+#boton3 p {
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+  margin-top: 1vw;
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  background-color: blue;
+  overflow: hidden;
+  width: 40vw;
+  height: 0vw;
+}
+
+#boton3:hover > p {
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  padding: 1vw;
+  height: 6.5vw;
+}
+
+
+/*------------Boton4----------- */
+
+#boton4{
+  display: block;
+  z-index: 0;
+  display: block;
+  padding-left: 5vw;
+  padding-top: 1vw;
+}
+
+#boton4 h2 {
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+}
+
+#boton4:hover > h2 {
+  font-size: 7vw;
+  color: green;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+
+#boton4 p {
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+  margin-top: 1vw;
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  background-color: green;
+  overflow: hidden;
+  width: 40vw;
+  height: 0vw;
+}
+
+#boton4:hover > p {
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  padding: 1vw;
+  height: 6.5vw;
+}
+
+/*------------Lottie----------- */
+
+#lottie {
+  display: none;
+  position: fixed;
+  top:5vw;
+  left: 55vw;
+  z-index: 15;
+  height: auto;
+  width: 40vw;
+}
