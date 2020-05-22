@@ -4,7 +4,9 @@ function init() {
 	window.addEventListener( 'resize', onWindowResize, false );
 	window.addEventListener( 'wheel', onMouseWheel, false );
 	document.getElementById("boton1").addEventListener("mouseover", mouseOverBoton1);
+	document.getElementById("boton1").addEventListener("mouseout", mouseOutBoton1);
 	document.getElementById("boton2").addEventListener("mouseover", mouseOverBoton2);
+	document.getElementById("boton2").addEventListener("mouseout", mouseOutBoton2);
 	document.getElementById("boton3").addEventListener("mouseover", mouseOverBoton3);
 	document.getElementById("boton4").addEventListener("mouseover", mouseOverBoton4);
 }
@@ -31,9 +33,18 @@ function mouseOverBoton1() {
   var menu = document.getElementById("menu").style.backgroundColor = "pink";
 }
 
+function mouseOutBoton1() {
+  var menu = document.getElementById("menu").style.backgroundColor = "grey";
+}
+
 function mouseOverBoton2() {
-  var menu = document.getElementById("menu").style.backgroundColor = "#e7ee5a";
-	var menu = document.getElementById("lottie").style.display= "inline-block";
+	  var menu = document.getElementById("menu").style.backgroundColor = "#353b5d";
+		var menu = document.getElementById("lottie").style.display= "inline-block";
+}
+
+function mouseOutBoton2() {
+  var menu = document.getElementById("menu").style.backgroundColor = "grey";
+	var menu = document.getElementById("lottie").style.display= "none";
 }
 
 function mouseOverBoton3() {

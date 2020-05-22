@@ -8,7 +8,8 @@ html, body {
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0;
-  padding: 0
+  padding: 0;
+  scroll-snap-type: block mandatory;
 }
 
 /* -----------------------------
@@ -73,13 +74,8 @@ p {
 ------------Sección 1-----------
 ----------------------------- */
 
-#sec1{
-  background-color:#2C3EC8;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
-
 #sidebar{
+  scroll-snap-align: start;
   box-shadow:0px 0px 0px 0px #000000 inset;
   position: absolute;
   top:0;
@@ -208,9 +204,10 @@ p {
 ----------------------------- */
 
 #menu{
+  scroll-snap-align: start;
   transition-duration: .3s;
   transition-timing-function: ease-out;
-  background-color: pink;
+  background-color: lightgrey;
   box-shadow:0px 0px 0px 0px #000000 inset;
   z-index: 0;
   display: block;
@@ -238,7 +235,7 @@ p {
 #boton1{
   z-index: 10;
   display: block;
-  padding-left: 5vw;
+  padding-left: 10vw;
   padding-top: 1vw;
 }
 
@@ -274,7 +271,7 @@ p {
 #boton2{
   display: block;
   z-index: 0;
-  padding-left: 5vw;
+  padding-left: 10vw;
   padding-top: 1vw;
 }
 
@@ -285,7 +282,7 @@ p {
 
 #boton2:hover > h2 {
   font-size: 7vw;
-  color: red;
+  color: #e99179;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
@@ -294,7 +291,7 @@ p {
   transition-timing-function: ease-out;
   display: block;
   margin-top: 1vw;
-  background-color: red;
+  background-color: #e99179;
   overflow: hidden;
   height: 0vw;
   width: 40vw;
@@ -312,7 +309,7 @@ p {
   display: block;
   z-index: 0;
   display: block;
-  padding-left: 5vw;
+  padding-left: 10vw;
   padding-top: 1vw;
 }
 
@@ -351,7 +348,7 @@ p {
   display: block;
   z-index: 0;
   display: block;
-  padding-left: 5vw;
+  padding-left: 10vw;
   padding-top: 1vw;
 }
 
@@ -388,7 +385,7 @@ p {
 #lottie {
   display: none;
   position: fixed;
-  top:5vw;
+  top:7vw;
   left: 55vw;
   z-index: 15;
   height: auto;

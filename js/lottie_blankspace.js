@@ -3,7 +3,7 @@ container: document.getElementById('lottie'),
 renderer: 'svg',
 loop: true,
 autoplay: true,
-path: 'js/data3.json',
+path: 'js/mocap.json',
 name: "animScroll",
 }), animScroll, tl;
 

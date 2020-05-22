@@ -107,8 +107,8 @@ function render() {
   var modelo = scene.children[3];
   modelo.rotation.y += 0.005;
 
-  camera.position.x += ( mouseX/3 - camera.position.x ) * .1;
-  camera.position.y += ( - mouseY/8 - camera.position.y ) * 1;
+  camera.position.x += ( mouseX/4 - camera.position.x ) * .1;
+  camera.position.y += ( - mouseY/15 - camera.position.y ) * 1;
 
   camera.lookAt( scene.position );
   renderer.render( scene, camera );
@@ -127,7 +127,7 @@ function onMouseWheel( event ) {
   var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 
   var videoBGHeight = document.getElementById('overlay').clientHeight;
-  var carouselPosTop = document.getElementById('menu').offsetTop;
-
-  camera.position.z = 110 - (window.scrollY/5);
+  // var carouselPosTop = document.getElementById('menu').offsetTop;
+  camera.position.z = 110 - ((90/videoBGHeight)*window.scrollY);
+  console.log(camera.position.z );
 }
