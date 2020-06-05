@@ -30,7 +30,7 @@ h2{
   font-family: 'Archivo', sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 5vw;
+  font-size: 3vw;
   line-height: 0;
   color: #000000;
 }
@@ -210,18 +210,17 @@ p {
   background-color: lightgrey;
   box-shadow:0px 0px 0px 0px #000000 inset;
   z-index: 0;
-  display: block;
   position: absolute;
   height: 100vh;
   min-height: 60vw;
   width: 100vw;
   z-index: -1 !important;
+  margin: 0;
+  padding: 0;
 }
 
 #menu h2 {
   line-height: 0;
-  margin-bottom: 3vw;
-  padding-top: 1vw;
 }
 
 #menu p {
@@ -233,31 +232,40 @@ p {
 /*------------Boton1----------- */
 
 #boton1{
-  z-index: 10;
   display: block;
-  padding-left: 10vw;
-  padding-top: 1vw;
+  z-index: 0;
+  float: right;
+  padding-right: 52vw;
+  margin-bottom: 2vw;
 }
 
 #boton1 h2 {
   transition-duration: .3s;
   transition-timing-function: ease-out;
+  float: right;
+  margin-left: 50vw;
+  margin-bottom: 3vw;
 }
 
 #boton1:hover > h2 {
-  font-size: 7vw;
-  color: red;
+  margin-bottom: 3vw;
+  font-size: 5vw;
+  color: #e99179;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
 #boton1 p {
-  transition-duration: .5s;
-  margin-top: 1vw;
-  box-shadow:0px 0px 0px 1px #000000 inset;
-  background-color: red;
+  transition-duration: .3s;
+  transition-timing-function: ease-out;
+  display: block;
+  margin-top: 0vw;
+  margin-bottom: 3vw;
+  background-color: #e99179;
   overflow: hidden;
   height: 0vw;
-  width: 40vw;
+  width: 30vw;
+  float: right;
+
 }
 
 #boton1:hover > p {
@@ -271,18 +279,23 @@ p {
 #boton2{
   display: block;
   z-index: 0;
-  padding-left: 10vw;
-  padding-top: 1vw;
+  float: right;
+  padding-right: 52vw;
+  margin-bottom: 2vw;
 }
 
 #boton2 h2 {
   transition-duration: .3s;
   transition-timing-function: ease-out;
+  float: right;
+  margin-left: 50vw;
+  margin-top: 0;
 }
 
 #boton2:hover > h2 {
-  font-size: 7vw;
-  color: #e99179;
+  margin-bottom: 3vw;
+  font-size: 5vw;
+  color: #b3acf2;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
@@ -290,11 +303,13 @@ p {
   transition-duration: .3s;
   transition-timing-function: ease-out;
   display: block;
-  margin-top: 1vw;
-  background-color: #e99179;
+  margin-top: 0vw;
+  margin-bottom: 3vw;
+  background-color: #b3acf2;
   overflow: hidden;
   height: 0vw;
-  width: 40vw;
+  width: 30vw;
+  float: right;
 }
 
 #boton2:hover > p {
@@ -308,37 +323,44 @@ p {
 #boton3{
   display: block;
   z-index: 0;
-  display: block;
-  padding-left: 10vw;
-  padding-top: 1vw;
+  float: right;
+  padding-right: 52vw;
+  margin-bottom: 2vw;
 }
 
 #boton3 h2 {
   transition-duration: .3s;
   transition-timing-function: ease-out;
+  float: right;
+  margin-left: 50vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
 }
 
 #boton3:hover > h2 {
-  font-size: 7vw;
-  color: blue;
+  margin-bottom: 3vw;
+  font-size: 5vw;
+  color: #67bcc8;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
 #boton3 p {
   transition-duration: .3s;
   transition-timing-function: ease-out;
-  margin-top: 1vw;
-  box-shadow:0px 0px 0px 1px #000000 inset;
-  background-color: blue;
+  display: block;
+  margin-top: 0vw;
+  margin-bottom: 3vw;
+  background-color: #67bcc8;
   overflow: hidden;
-  width: 40vw;
   height: 0vw;
+  width: 30vw;
+  float: right;
 }
 
 #boton3:hover > p {
   box-shadow:0px 0px 0px 1px #000000 inset;
-  padding: 1vw;
   height: 6.5vw;
+  padding: 1vw;
 }
 
 
@@ -347,31 +369,38 @@ p {
 #boton4{
   display: block;
   z-index: 0;
-  display: block;
-  padding-left: 10vw;
-  padding-top: 1vw;
+  float: right;
+  padding-right: 52vw;
+  margin-bottom: 2vw;
 }
 
 #boton4 h2 {
   transition-duration: .3s;
   transition-timing-function: ease-out;
+  float: right;
+  margin-bottom: 0vw;
+  margin-left: 50vw;
+  margin-top: 0;
 }
 
 #boton4:hover > h2 {
-  font-size: 7vw;
-  color: green;
+  margin-bottom: 3vw;
+  font-size: 5vw;
+  color: #f9ff8f;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
 #boton4 p {
   transition-duration: .3s;
   transition-timing-function: ease-out;
-  margin-top: 1vw;
+  margin-top: 0vw;
   box-shadow:0px 0px 0px 1px #000000 inset;
-  background-color: green;
+  background-color: #f9ff8f;
   overflow: hidden;
-  width: 40vw;
   height: 0vw;
+  width: 30vw;
+  float: right;
+  display: block;
 }
 
 #boton4:hover > p {
@@ -382,12 +411,75 @@ p {
 
 /*------------Lottie----------- */
 
-#lottie {
+#lottie_branding {
   display: none;
   position: fixed;
-  top:7vw;
-  left: 55vw;
+  overflow: hidden;
+  top:1vw;
+  left: 52vw;
   z-index: 15;
-  height: auto;
-  width: 40vw;
+  height: 31.2vw;
+  width: 26vw;
+  border: solid 1px black;
+}
+
+#lottie_generativo{
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  top:1vw;
+  left: 52vw;
+  z-index: 15;
+  height: 31.2vw;
+  width: 26vw;
+  border: solid 1px black;
+}
+
+#lottie_animacion{
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  top:1vw;
+  left: 52vw;
+  z-index: 15;
+  height: 31.2vw;
+  width: 26vw;
+  border: solid 1px black;
+}
+
+#boton2_vp{
+  background-color: #b3acf2;
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  position: fixed;
+  top:33vw;
+  left: 52vw;
+  height: 2.5vw;
+  width: 9vw;
+  text-align: center;
+  padding-top: .1vw;
+}
+
+#boton3_vp{
+  background-color: #67bcc8;
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  position: fixed;
+  top:33vw;
+  left: 52vw;
+  height: 2.5vw;
+  width: 9vw;
+  text-align: center;
+  padding-top: .1vw;
+}
+
+
+#boton4_vp{
+  background-color: #f9ff8f;
+  box-shadow:0px 0px 0px 1px #000000 inset;
+  position: fixed;
+  top:33vw;
+  left: 52vw;
+  height: 2.5vw;
+  width: 9vw;
+  text-align: center;
+  padding-top: .1vw;
 }
